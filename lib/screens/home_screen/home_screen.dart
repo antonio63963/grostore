@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
             child: GrocerySearchInput()
           ),
         ),
-        bottomNavigationBar: AppBottomNavBar(),
+        bottomNavigationBar: AppBottomNavBar(index: 0,),
       ),
     );
   }
