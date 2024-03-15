@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:grocery_shopping_app/comon/constants.dart';
 import 'package:grocery_shopping_app/comon/widgets/app_bottom_nav_bar.dart';
 import 'package:grocery_shopping_app/comon/widgets/grocery_search_input.dart';
+import 'package:models/models.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -44,11 +45,12 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
           bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(56),
-            child: GrocerySearchInput()
-          ),
+              preferredSize: const Size.fromHeight(56),
+              child: GrocerySearchInput()),
         ),
-        bottomNavigationBar: AppBottomNavBar(index: 0,),
+        bottomNavigationBar: AppBottomNavBar(
+          index: 0,
+        ),
       ),
     );
   }
